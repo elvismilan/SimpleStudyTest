@@ -3,7 +3,24 @@ import React from 'react';
 import Share from 'react-native-share';
 
 export default function App() {
-  
+  const share = async () => {
+    const options = {
+      message: '',
+      url: 'https://simplestydy.ie',
+      email: 'info@simplestudy.ie',
+      subject: 'Social Sharing Task',
+      recipient: '353877377612',
+    };
+
+    try {
+      const res = await Share.open(options);
+      console.log(res);
+    } catch (err) {
+      console.log(err);
+    }
+    
+  };
+
   return (
     <View>
       <Text 
