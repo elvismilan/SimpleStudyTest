@@ -5,7 +5,8 @@ import Share from 'react-native-share';
 export default function App() {
   const share = async () => {
     const options = {
-      message: '',
+      title: 'Social Sharing Test'
+      message: 'Simple Study a brilliant app!',
       url: 'https://simplestydy.ie',
       email: 'info@simplestudy.ie',
       subject: 'Social Sharing Task',
