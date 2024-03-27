@@ -18,7 +18,11 @@ export default function App() {
     } catch (err) {
       console.log(err);
     }
-    
+
+    //Share.open(options)
+    //  .then(res => console.log(res))
+    //  .catch(err => console.log(err));
+
   };
 
   return (
